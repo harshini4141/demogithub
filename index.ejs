@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Brand Management</h1>
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Student Name" required>
+        <input type="'text" name="description" placeholder="Student Description">
+<button type=submit>Add Brand</button>
+    </form>
+    <ul>
+        <%brands.forEach(brand=>{%>
+        <li>
+            <strong><%=student.name%></strong>:<%=student.description %>
+        </li>
+        <%})%>
+    </ul>
+</body>
+</html>
